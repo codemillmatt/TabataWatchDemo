@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{0C6B9676-D291-4BEF-8D6E-B2A9248A82C6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TabataWatchDemo</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TabataWatchDemo</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\outline_icons.pdf" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\outline_icons.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\outline_icons%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\outline_icons%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\RedThumb.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\RedThumb.imageset\RedThumbsUp%401x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\RedThumb.imageset\RedThumbsUp%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\RedThumb.imageset\RedThumbsUp%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Thumb.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Image.imageset\ThumbsUp.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Image.imageset\ThumbsUp%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Image.imageset\ThumbsUp%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\Gear.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\Gear%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Gears.imageset\Gear%403x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Thumb.imageset\ThumbsUp.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Thumb.imageset\ThumbsUp%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Thumb.imageset\ThumbsUp%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDetailController.cs" />
+    <Compile Include="SettingsDetailController.designer.cs">
+      <DependentUpon>SettingsDetailController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDetailTableViewController.cs" />
+    <Compile Include="SettingsDetailTableViewController.designer.cs">
+      <DependentUpon>SettingsDetailTableViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\TabataWatchDemoWatchKitExtension\TabataWatchDemoWatchKitExtension.csproj">
+      <Project>{E76AF7AA-7B15-444E-AB60-50FE790D5EA7}</Project>
+      <Name>TabataWatchDemoWatchKitExtension</Name>
+      <IsAppExtension>True</IsAppExtension>
+    </ProjectReference>
+    <ProjectReference Include="..\TabataPCL\TabataPCL.csproj">
+      <Project>{5C197859-EB2D-4E8D-8869-0B5C2BA5D5DC}</Project>
+      <Name>TabataPCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
